@@ -28,6 +28,38 @@ async def remove_premium(client, message):
     else:
         await message.reply_text("ᴜꜱᴀɢᴇ : /remove_premium user_id") 
 
+@Client.on_callback_query(filters.regex("^available_plans$"))
+async def callback_available_plans(client, callback_query):
+    user_mention = callback_query.from_user.mention
+    message = f"""👋 Hey {user_mention},
+
+🎖️ Available Plans :
+
+● 30₹ ➛ Bronze Plan » 7 days
+● 110₹ ➛ Silver Plan » 30 days
+● 280₹ ➛ Gold Plan » 90 days
+● 560₹ ➛ Platinum Plan » 180 days
+● 999₹ ➛ Diamond Plan » 365 days
+
+💵 UPI ID - singhbaljeet1299@oksbi
+📸 QR Code - Click here to scan
+
+⚜️ Check your active plan by using: /myplan
+
+‼️ Must send screenshot after payment."""
+    await callback_query.message.edit_text(
+        text=message,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("Send Screenshot here", user_id=int(6485380150))]
+                    [InlineKeyboardButton("❌ Close ❌", callback_data='close_data')
+                ]
+            ]
+        )
+    )
+
+
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
     user = message.from_user.mention 
