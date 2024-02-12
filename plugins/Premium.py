@@ -50,10 +50,6 @@ async def callback_handlers(client, query: CallbackQuery):
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ."""
         await query.message.edit_text(text=message)
 
-@Client.on_callback_query()
-async def callback_handler(client, query: CallbackQuery):
-    if query.data == "close_data":
-        await query.message.delete()
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
@@ -174,40 +170,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 
 @Client.on_callback_query()
 async def callback_handler(client, query: CallbackQuery):
-    if query.data == "close_dataa":
+    if query.data == "close_data":
         await query.message.delete()
+
 
 @Client.on_message(filters.command("plan"))
 async def plan(client, message):
-    user_id = message.from_user.id
-    users = message.from_user.mention
+    user_id = message.from_user.id 
+    users = message.from_user.mention 
     btn = [[
 	
         InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", user_id=int(6485380150))],[InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
     ]]
-    
     await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
-	
-
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.types import CallbackQuery
-
-@Client.on_message(filters.command("plann"))
-async def plan(client, message):
-    user_id = message.from_user.id
-    users = message.from_user.mention
-    btn = [
-        [
-            InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", callback_data="send_payment")]
-        [    InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close")
-        ]
-    ]
-
-    await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption="Your caption here", reply_markup=InlineKeyboardMarkup(btn))
-
-@Client.on_callback_query()
-async def button(client, query: CallbackQuery):
-    if query.data == "close":
-        await query.message.delete()
-    elif query.data == "send_payment":
-        await query.answer("Please send your payment screenshot here.")
+    
