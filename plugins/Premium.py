@@ -10,7 +10,7 @@ from utils import get_seconds
 from database.users_chats_db import db 
 from pyrogram import Client, filters 
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 @Client.on_message(filters.command("remove_premium") & filters.user(ADMINS))
 async def remove_premium(client, message):
@@ -29,6 +29,26 @@ async def remove_premium(client, message):
         await message.reply_text("ᴜꜱᴀɢᴇ : /remove_premium user_id") 
 
 
+@Client.on_callback_query()
+async def callback_handlers(client, query: CallbackQuery):
+    if query.data == "available_plans":
+        message = """👋 ʜᴇʏ Sangram,
+    
+🎖️ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs :
+
+● 30₹ ➛ ʙʀᴏɴᴢᴇ ᴘʟᴀɴ » 7 ᴅᴀʏꜱ
+● 110₹ ➛ ꜱɪʟᴠᴇʀ ᴘʟᴀɴ » 30 ᴅᴀʏꜱ
+● 280₹ ➛ ɢᴏʟᴅ ᴘʟᴀɴ » 90 ᴅᴀʏꜱ
+● 560₹ ➛ ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ » 180 ᴅᴀʏꜱ
+● 999₹ ➛ ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ » 365 ᴅᴀʏꜱ
+
+💵 ᴜᴘɪ ɪᴅ - singhbaljeet1299@oksbi
+📸 ǫʀ ᴄᴏᴅᴇ - ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ
+
+⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ."""
+        await query.message.edit_text(text=message)
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
@@ -161,24 +181,4 @@ async def plan(client, message):
     
     await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
 	
-@Client.on_callback_query()
-async def callback_handlers(client, callback_query):
-    if callback_query.data == "available_plans":
-        message = """👋 ʜᴇʏ Sangram,
-    
-🎖️ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs :
 
-● 30₹ ➛ ʙʀᴏɴᴢᴇ ᴘʟᴀɴ » 7 ᴅᴀʏꜱ
-● 110₹ ➛ ꜱɪʟᴠᴇʀ ᴘʟᴀɴ » 30 ᴅᴀʏꜱ
-● 280₹ ➛ ɢᴏʟᴅ ᴘʟᴀɴ » 90 ᴅᴀʏꜱ
-● 560₹ ➛ ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ » 180 ᴅᴀʏꜱ
-● 999₹ ➛ ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ » 365 ᴅᴀʏꜱ
-
-💵 ᴜᴘɪ ɪᴅ - singhbaljeet1299@oksbi
-📸 ǫʀ ᴄᴏᴅᴇ - ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ
-
-⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
-
-‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ."""
-        await callback_query.message.edit_text(text=message)
-    #
