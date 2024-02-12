@@ -153,3 +153,15 @@ async def plan(client, message):
     
 # SPECIAL THANKS TO [Rishikesh Sharma] @Rk_botowner FOR THESE AMAZING CODES
 # SPECIAL THANKS TO @DeletedFromEarth FOR MODIFYING THESE AMAZING CODES 
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+@Client.on_message(filters.command("plann"))
+async def plan(client, message):
+    user_id = message.from_user.id 
+    users = message.from_user.mention 
+    btn = [
+        [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/your_bot_username?start=screenshot")],
+        [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
+    ]
+    await message.reply_photo(photo="https://telegra.ph/file/734170f40b8169830d821.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
