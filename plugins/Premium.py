@@ -49,10 +49,11 @@ async def callback_handlers(client, query: CallbackQuery):
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ."""
         await query.message.edit_text(text=message)
-	    
-	    if query.data == "close_data":
-		    await query.message.delete()
-	
+
+@Client.on_callback_query()
+async def callback_handler(client, query: CallbackQuery):
+    if query.data == "close_data":
+        await query.message.delete()
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
