@@ -32,9 +32,10 @@ async def remove_premium(client, message):
 
 @Client.on_callback_query(filters.regex("^plan$"))
 async def callback_plan(bot, update):
-    user_mention = update.from_user.mention
-    message = f"Hey {user_mention}, here is the plan information:\n\nPlan 1: Description of plan 1\nPlan 2: Description of plan 2\n..."
-    await bot.send_message(update.from_user.id, message)
+    user_id = message.from_user.id 
+    users = message.from_user.mention 
+    message=script.PREMIUM_TEXT.format(message.from_user.mention)
+    await bot.send_message(user_id, message)
 
 
 @Client.on_message(filters.command("myplan"))
