@@ -28,6 +28,23 @@ async def remove_premium(client, message):
     else:
         await message.reply_text("ᴜꜱᴀɢᴇ : /remove_premium user_id") 
 
+
+@Client.on_callback_query(filters.regex("seeplans"))
+async def commands_callbacc(client, message):
+
+	btn = [
+        [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/ProSangram")],
+        [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
+	]
+	
+	plan_text = """
+ Testing 
+ """
+	
+	await Client.send_photo(
+		caption=plan_text,
+	        reply_markup=btn)
+
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
     user = message.from_user.mention 
