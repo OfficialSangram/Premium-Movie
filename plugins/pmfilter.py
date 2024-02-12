@@ -1599,7 +1599,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )       
 
-    elif query.data == "seeplans":
+    elif query.data == "seeplanss":
         btn = [[
             InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(6485380150))
         ],[
