@@ -154,14 +154,3 @@ async def plan(client, message):
     
 # SPECIAL THANKS TO [Rishikesh Sharma] @Rk_botowner FOR THESE AMAZING CODES
 # SPECIAL THANKS TO @DeletedFromEarth FOR MODIFYING THESE AMAZING CODES 
-
-@Client.on_callback_query()
-async def callback_handlers(client, callback_query):
-    user_id = message.from_user.id
-    users = message.from_user.mention
-	
-    if callback_query.data == "available_plans":
-        message = script.PREMIUM_TEXT.format(message.from_user.mention)
-        await callback_query.message.edit_text(text=message)
-
-# Sangram
