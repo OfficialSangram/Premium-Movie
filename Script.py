@@ -283,9 +283,9 @@ BOT WORKING PROPERLY"""
 
     #PLANS
 
-    PAGE_TXT = """ᴡʜʏ ᴀʀᴇ ʏᴏᴜ ꜱᴏ ᴄᴜʀɪᴏᴜꜱ ⁉️"""
+    PAGE_TXT = """ᴡʜᴀᴛ ⁉️"""
 
-    PURCHASE_TXT = """ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ."""
+    PURCHASE_TXT = """<b>💶 ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ 💶</b>"""
 
     PREMIUM_TEXT = """<b>👋 ʜᴇʏ {},
     
