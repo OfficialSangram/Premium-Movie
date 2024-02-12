@@ -181,4 +181,36 @@ async def commands_callbacc(client, message):
 		caption=plan_text,
 	        reply_markup=btn)
 
-	   
+
+   from pyrogram import filters, Client
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+@Client.on_message(filters.command("plann"))
+async def plan(client, message):
+    btn = [
+        [InlineKeyboardButton("📋 View Available Plans", callback_data="available_plans")],
+        [InlineKeyboardButton("❌ Close ❌", callback_data="close_data")]
+    ]
+    await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption="Your caption here", reply_markup=InlineKeyboardMarkup(btn))
+
+@Client.on_callback_query()
+async def callback_handlers(client, callback_query):
+    if callback_query.data == "available_plans":
+        message = """👋 ʜᴇʏ Sangram,
+    
+🎖️ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs :
+
+● 30₹ ➛ ʙʀᴏɴᴢᴇ ᴘʟᴀɴ » 7 ᴅᴀʏꜱ
+● 110₹ ➛ ꜱɪʟᴠᴇʀ ᴘʟᴀɴ » 30 ᴅᴀʏꜱ
+● 280₹ ➛ ɢᴏʟᴅ ᴘʟᴀɴ » 90 ᴅᴀʏꜱ
+● 560₹ ➛ ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ » 180 ᴅᴀʏꜱ
+● 999₹ ➛ ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ » 365 ᴅᴀʏꜱ
+
+💵 ᴜᴘɪ ɪᴅ - singhbaljeet1299@oksbi
+📸 ǫʀ ᴄᴏᴅᴇ - ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ
+
+⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ."""
+        await callback_query.message.edit_text(text=message)
+    #
