@@ -10,7 +10,7 @@ from utils import get_seconds
 from database.users_chats_db import db 
 from pyrogram import Client, filters 
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 @Client.on_message(filters.command("remove_premium") & filters.user(ADMINS))
 async def remove_premium(client, message):
@@ -184,7 +184,22 @@ async def callback_available_plans(client, callback_query):
         [InlineKeyboardButton("❌ Close ❌", callback_data="close_data")]
     ]
     await callback_query.message.edit_text(
-	    text=message,
+	    text=script.PREMIUM_TEXT.format(callback_query.from_user.mention),
 	    reply_markup=InlineKeyboardMarkup(btn))
 
 # © Sangram
+@Client.on_callback_query(filters.regex("^seeplans"))
+async def get_plan_info(Client, CallbackQuery):
+    btn = [
+        [
+            InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", user_id=int(6485380150))
+        ],
+        [
+            InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
+        ]
+    ]
+    await CallbackQuery.message.reply_photo(
+        photo="https://graph.org/file/ecc59af59c037910b27ab.jpg",
+        caption=script.PREMIUM_TEXT.format(CallbackQuery.from_user.mention),
+        reply_markup=InlineKeyboardMarkup(btn)
+	    )
