@@ -143,7 +143,12 @@ async def premium_user(client, message):
 
 
 from pyrogram import filters, Client
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+
+@Client.on_callback_query()
+async def callback_handler(client, query: CallbackQuery):
+    if query.data == "close_data":
+        await query.message.delete()
 
 @Client.on_message(filters.command("plan"))
 async def plan(client, message):
