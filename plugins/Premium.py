@@ -179,6 +179,6 @@ async def callback_available_plans(client, callback_query):
         [InlineKeyboardButton("📲 Send Payment Screenshot Here", user_id=int(6485380150))],
         [InlineKeyboardButton("❌ Close ❌", callback_data="close_data")]
     ]
-    await callback_query.message.edit_text(text=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
+    await callback_query.message.edit_text(text=message, reply_markup=InlineKeyboardMarkup(btn))
 
 # © Sangram
