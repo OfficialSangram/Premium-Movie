@@ -52,6 +52,7 @@ async def callback_available_plans(client, callback_query):
 ⚜️ Check your active plan by using: /myplan
 
 ‼️ Must send screenshot after payment."""
+	
 	await Client.send_photo(
 		photo="https://graph.org/file/ecc59af59c037910b27ab.jpg",
 		caption=message,
