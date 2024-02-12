@@ -156,7 +156,7 @@ async def plan(client, message):
 # Sangram
 
 @Client.on_callback_query(filters.regex("seeplans"))
-async def commands_callbacc(client, message)
+async def commands_callbacc(client, message):
 
 	btn = [
         [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/ProSangram")],
