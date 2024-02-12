@@ -151,7 +151,7 @@ async def plan(client, message):
         InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", user_id=int(6485380150))],
 	   [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
     ]]
-    await message.reply_photo(photo="https://telegra.ph/file/734170f40b8169830d821.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
+    await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
     
 # SPECIAL THANKS TO [Rishikesh Sharma] @Rk_botowner FOR THESE AMAZING CODES
 # SPECIAL THANKS TO @DeletedFromEarth FOR MODIFYING THESE AMAZING CODES 
@@ -179,6 +179,6 @@ async def callback_available_plans(client, callback_query):
         [InlineKeyboardButton("📲 Send Payment Screenshot Here", user_id=int(6485380150))],
         [InlineKeyboardButton("❌ Close ❌", callback_data="close_data")]
     ]
-    await callback_query.message.edit_text(text=message, reply_markup=InlineKeyboardMarkup(btn))
+    await callback_query.message.edit_text(text=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
 
 # © Sangram
