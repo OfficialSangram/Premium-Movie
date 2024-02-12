@@ -1653,11 +1653,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "free":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', callback_data="give_trial")
+            InlineKeyboardButton('🆓 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ 🆓', callback_data="give_trial")
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='other'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='other'),
             InlineKeyboardButton('1 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='broze')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='broze')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1672,9 +1672,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
+            InlineKeyboardButton('⬅️  ʙᴀᴄᴋ', callback_data='free'),
             InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='silver')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1689,9 +1689,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='broze'),
+            InlineKeyboardButton('⬅️  ʙᴀᴄᴋ', callback_data='broze'),
             InlineKeyboardButton('3 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='gold')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='gold')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1706,9 +1706,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='silver'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='silver'),
             InlineKeyboardButton('4 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='platinum')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='platinum')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1723,9 +1723,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='gold'),
+            InlineKeyboardButton('⬅️  ʙᴀᴄᴋ', callback_data='gold'),
             InlineKeyboardButton('5 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='diamond')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='diamond')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1741,9 +1741,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='platinum'),
+            InlineKeyboardButton('⬅️  ʙᴀᴄᴋ', callback_data='platinum'),
             InlineKeyboardButton('6 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='other')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='other')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
@@ -1756,11 +1756,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(6485380150))
+            InlineKeyboardButton('📞 ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(6485380150))
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='diamond'),
             InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='free')
+            InlineKeyboardButton('ɴᴇxᴛ ➡️', callback_data='free')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
