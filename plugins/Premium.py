@@ -154,3 +154,18 @@ async def plan(client, message):
     await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
 
 # Sangram
+
+@Client.on_callback_query(filters.regex("seeplans"))
+async def commands_callbacc(_, cb: CallbackQuery)
+
+	btn = [
+        [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/ProSangram")],
+        [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
+	]
+	
+    plan_text = """
+    Testing 
+    """
+    await Client.send_photo(
+	    caption=plan_text,
+	    reply_markup=btn,
