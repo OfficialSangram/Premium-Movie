@@ -163,11 +163,12 @@ async def commands_callbacc(client, message):
         [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
 	]
 	
-    plan_text = """
-    Testing 
-    """
-    await Client.send_photo(
-	    caption=plan_text,
-	    reply_markup=btn,
+	plan_text = """
+ Testing 
+ """
+	
+	await Client.send_photo(
+		caption=plan_text,
+	        reply_markup=btn)
 
 	   
