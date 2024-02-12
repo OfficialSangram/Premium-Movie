@@ -31,6 +31,11 @@ async def remove_premium(client, message):
 @Client.on_callback_query(filters.regex("^available_plans$"))
 async def callback_available_plans(client, callback_query):
     user_mention = callback_query.from_user.mention
+    btn = [[
+	
+        InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", user_id=int(6485380150))],
+	   [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
+    ]]
     message = f"""👋 Hey {user_mention},
 
 🎖️ Available Plans :
@@ -47,17 +52,9 @@ async def callback_available_plans(client, callback_query):
 ⚜️ Check your active plan by using: /myplan
 
 ‼️ Must send screenshot after payment."""
-    await callback_query.message.edit_text(
-        text=message,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("Send Screenshot here", user_id=int(6485380150))]
-                    [InlineKeyboardButton("❌ Close ❌", callback_data='close_data')
-                ]
-            ]
-        )
-    )
+	await callback_query.message.edit_text(
+		text=message,
+		reply_markup=InlineKeyboardMarkup(btn))
 
 
 @Client.on_message(filters.command("myplan"))
