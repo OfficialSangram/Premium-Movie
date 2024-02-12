@@ -165,24 +165,9 @@ async def plan(client, message):
 
 # Sangram
 
-@Client.on_callback_query(filters.regex("seeplans"))
-async def commands_callbacc(client, message):
-
-	btn = [
-        [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/ProSangram")],
-        [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
-	]
-	
-	plan_text = """
- Testing 
- """
-	
-	await Client.send_photo(
-		caption=plan_text,
-	        reply_markup=btn)
 
 
-   from pyrogram import filters, Client
+from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.command("plann"))
