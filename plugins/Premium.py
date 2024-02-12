@@ -29,21 +29,13 @@ async def remove_premium(client, message):
         await message.reply_text("ᴜꜱᴀɢᴇ : /remove_premium user_id") 
 
 
-@Client.on_callback_query(filters.regex("seeplans"))
-async def commands_callbacc(client, message):
 
-	btn = [
-        [InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url="https://t.me/ProSangram")],
-        [InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")]
-	]
-	
-	plan_text = """
- Testing 
- """
-	
-	await Client.send_photo(
-		caption=plan_text,
-	        reply_markup=btn)
+@Client.on_callback_query(filters.regex("^plan$"))
+async def callback_plan(bot, update):
+    user_mention = update.from_user.mention
+    message = f"Hey {user_mention}, here is the plan information:\n\nPlan 1: Description of plan 1\nPlan 2: Description of plan 2\n..."
+    await bot.send_message(update.from_user.id, message)
+
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
@@ -69,7 +61,7 @@ async def myplan(client, message):
         await message.reply_text(f"⚜️ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ᴅᴀᴛᴀ :\n\n👤 ᴜꜱᴇʀ : {user}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")   
     else:
         await message.reply_text(f"ʜᴇʏ {user},\n\nʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀɴʏ ᴀᴄᴛɪᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs, ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇",
-	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='seeplans')]]))			 
+	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='plan')]]))			 
 
 @Client.on_message(filters.command("get_premium") & filters.user(ADMINS))
 async def get_premium(client, message):
