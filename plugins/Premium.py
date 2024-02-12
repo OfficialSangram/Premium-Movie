@@ -52,12 +52,11 @@ async def callback_available_plans(client, callback_query):
 ⚜️ Check your active plan by using: /myplan
 
 ‼️ Must send screenshot after payment."""
-	
 	await Client.send_photo(
+		chat_id=message.chat.id,
 		photo="https://graph.org/file/ecc59af59c037910b27ab.jpg",
 		caption=message,
 		reply_markup=InlineKeyboardMarkup(btn))
-
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
