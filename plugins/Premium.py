@@ -154,7 +154,7 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.command("plann"))
-async def plan(client, message)
+async def plan(client, message):
     user_id = message.from_user.id
     users = message.from_user.mention
     btn = [
