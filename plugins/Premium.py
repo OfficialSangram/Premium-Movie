@@ -30,14 +30,6 @@ async def remove_premium(client, message):
 
 
 
-@Client.on_callback_query(filters.regex("^plan$"))
-async def callback_plan(bot, update):
-    user_id = message.from_user.id 
-    users = message.from_user.mention 
-    message=script.PREMIUM_TEXT.format(message.from_user.mention)
-    await bot.send_message(user_id, message)
-
-
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
     user = message.from_user.mention 
@@ -62,7 +54,7 @@ async def myplan(client, message):
         await message.reply_text(f"⚜️ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ᴅᴀᴛᴀ :\n\n👤 ᴜꜱᴇʀ : {user}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")   
     else:
         await message.reply_text(f"ʜᴇʏ {user},\n\nʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀɴʏ ᴀᴄᴛɪᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs, ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇",
-	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='plan')]]))			 
+	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='available_plans')]]))			 
 
 @Client.on_message(filters.command("get_premium") & filters.user(ADMINS))
 async def get_premium(client, message):
@@ -153,16 +145,17 @@ async def premium_user(client, message):
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(filters.command("plann"))
+@Client.on_message(filters.command("plan"))
 async def plan(client, message):
     user_id = message.from_user.id
     users = message.from_user.mention
-    btn = [
-        [InlineKeyboardButton("📋 View Available Plans", callback_data="available_plans")],
-        [InlineKeyboardButton("❌ Close ❌", callback_data="close_data")]
-    ]
+    btn = [[
+	
+        InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", user_id=int(6485380150))],[InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
+    ]]
+    
     await message.reply_photo(photo="https://graph.org/file/ecc59af59c037910b27ab.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
-
+	
 @Client.on_callback_query()
 async def callback_handlers(client, callback_query):
     if callback_query.data == "available_plans":
