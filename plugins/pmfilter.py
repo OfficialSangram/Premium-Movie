@@ -1779,9 +1779,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ɴᴇᴛᴡᴏʀᴋ', url='https://t.me/AvengerNetwork')
         ],[
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/AvengerNews'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/Red_Wine_Op')
+            InlineKeyboardButton('ʙᴏᴛs', url='https://t.me/AvengerBots')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
+            InlineKeyboardButton('ʙᴏᴛs ᴘʀᴏᴊᴇᴄᴛs', url='https://t.me/AvengerBots')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Red_Wine_Op')
