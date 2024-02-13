@@ -12,7 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
-@Client.on_message(filters.command("remove_premium") & filters.user(ADMINS))
+@Client.on_message(filters.command(["removepremium", "rmpremium"]) & filters.user(ADMINS))
 async def remove_premium(client, message):
     if len(message.command) == 2:
         user_id = int(message.command[1])  # Convert the user_id to integer
@@ -87,7 +87,7 @@ async def get_premium(client, message):
     else:
         await message.reply_text("ᴜꜱᴀɢᴇ : /get_premium user_id")
 
-@Client.on_message(filters.command("add_premium") & filters.user(ADMINS))
+@Client.on_message(filters.command("addpremium") & filters.user(ADMINS))
 async def give_premium_cmd_handler(client, message):
     if len(message.command) == 4:
         time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
@@ -115,7 +115,7 @@ async def give_premium_cmd_handler(client, message):
     else:
         await message.reply_text("Usage : /add_premium user_id time (e.g., '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year')")
 
-@Client.on_message(filters.command("premium_users") & filters.user(ADMINS))
+@Client.on_message(filters.command("premiumusers") & filters.user(ADMINS))
 async def premium_user(client, message):
     aa = await message.reply_text("<i>ꜰᴇᴛᴄʜɪɴɢ...</i>")
     new = f"⚜️ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ʟɪꜱᴛ :\n\n"
