@@ -7,7 +7,7 @@ class script(object):
     
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀɪʟᴛᴇʀ</a></b>"""
 
-    ABOUT_TXT = """<b>➲ ᴍʏ ɴᴀᴍᴇ : <a href="http://t.me/Kalakar_Sangram">{}</a>\n➲ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Kalakar_Sangram'>sᴀɴɢʀᴀᴍ</a>\n‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\n‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ʜᴏsᴛᴇᴅ ᴏɴ  : ʜᴇʀᴏᴋᴜ\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ4.2 [sᴛᴀʙʟᴇ]</b>"""
+    ABOUT_TXT = """<b>➲ ᴍʏ ɴᴀᴍᴇ : <a href="http://t.me/Kalakar_Sangram">{}</a>\n➲ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Kalakar_Sangram'>sᴀɴɢʀᴀᴍ</a>\➲ ʟɪʙʀᴀʀʏ : <a href="https://docs.pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>\n➲ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\n➲ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n➲ ʜᴏsᴛᴇᴅ ᴏɴ  : ʜᴇʀᴏᴋᴜ\n➲ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ4.2 [sᴛᴀʙʟᴇ]</b>"""
     
     CHANNELS = """
 <b>⚡ ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ⚡ 
