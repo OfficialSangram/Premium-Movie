@@ -5,7 +5,7 @@ class script(object):
     
     HELP_TXT = """<b>ʜᴇʏ {},
     
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀɪʟᴛᴇʀ</a></b>"""
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ</a></b>"""
 
     ABOUT_TXT = """<b>➲ ᴍʏ ɴᴀᴍᴇ : <a href="http://t.me/Kalakar_Sangram">{}</a>\n➲ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Kalakar_Sangram'>sᴀɴɢʀᴀᴍ</a>\n➲ ʟɪʙʀᴀʀʏ : <a href="https://docs.pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>\n➲ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/download/releases/3.0/">ᴘʏᴛʜᴏɴ</a>\n➲ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>\n➲ ʜᴏsᴛᴇᴅ ᴏɴ  : <a href="https://t.me/ProSangram">ᴘʀɪᴠᴀᴛᴇ sᴇʀᴠᴇʀ</a>\n➲ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : <a href="http://t.me/Red_Wine_Op">ᴠ4.2 [sᴛᴀʙʟᴇ]</a></b>"""
     
@@ -231,19 +231,12 @@ Nᴀᴍᴇ : {}
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 
     # PLESE DO NOT REMOVE ANY CREDITS ❤️‍🩹
-    CREDITS_TXT = """<b>
-❤️‍🩹 <u>ꜱᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ ᴇᴠᴇʀʏᴏɴᴇ</u>
+    CREDITS_TXT = """
+<b>━━━━━━━━━━━━━━━━
+       💳ᴄʀᴇᴅɪᴛ💳
 
-• ᴍᴀɪɴ ᴏᴡɴᴇʀ : <a href="https://t.me/DeletedFromEarth">Hᴀʀꜱʜᴀʟ ❤️‍🔥</a>
-• ʙᴀꜱᴇ ʀᴇᴘᴏ : <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a>
-• sᴛʀᴇᴀᴍ ғᴇᴀᴛᴜʀᴇ : <a href="https://t.me/LazyDeveloperr">LazyDeveloper</a>
-• sᴛʀᴇᴀᴍ ᴡᴇʙꜱɪᴛᴇ : <a href="https://t.me/Biisal">Bɪɪsᴀʟ</a>
-• ᴘʀᴇᴍɪᴜᴍ ᴄᴏᴅᴇꜱ : <a href="https://t.me/Rk_botowner">Rɪꜱʜɪᴋᴇꜱʜ</a>
-• ᴡᴇʟᴄᴏᴍᴇ ᴀɴɪᴍᴀᴛɪᴏɴ : <a href="https://t.me/Xavier_707">𝑿𝒂𝒗𝒊𝒆𝒓</a>
-• ꜱᴛʀᴇᴀᴍ ꜱʜᴏʀᴛʟɪɴᴋ : <a href="https://t.me/Mr_SPIDY">⚝𝗠𝗿.𝗦𝗣𝗜𝗗𝗬⚝</a>
+<u>ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ</u>
 
-ɪ ᴀᴍ ꜱᴏʀʀʏ ɪꜰ ɪ ꜰᴏʀɢᴏᴛ ꜱᴏᴍᴇᴏɴᴇ 🫂
-ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ʜᴇʟᴘɪɴɢ ɪɴ ᴛʜɪꜱ ᴀᴍᴀᴢɪɴɢ ʀᴏʟʟᴇʀ ᴄᴏᴀꜱᴛᴇʀ ᴊᴏᴜʀɴᴇʏ 🚀</b>
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     
