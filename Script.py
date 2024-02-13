@@ -233,7 +233,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     # PLESE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     CREDITS_TXT = """
 <b>━━━━━━━━━━━━━━━━━━━━━━━━━━
-                     💳 ᴄʀᴇᴅɪᴛ 💳
+                      💳 ᴄʀᴇᴅɪᴛ 💳
 
 <u>ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ</u>
 ʜᴇʀᴇ ɪs ᴛʜᴇ <a href="http://t.me/ProSangram">ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴀɴᴅ sᴘᴏɴsᴏʀ</a> ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ</a>.
