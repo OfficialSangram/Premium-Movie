@@ -1776,9 +1776,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/AvengerNews')
+            InlineKeyboardButton('ɴᴇᴛᴡᴏʀᴋ', url='https://t.me/AvengerNetwork')
         ],[
-            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/AvengerNews'),
             InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/Red_Wine_Op')
         ],[
             InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
