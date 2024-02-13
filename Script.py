@@ -7,7 +7,7 @@ class script(object):
     
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀɪʟᴛᴇʀ</a></b>"""
 
-    ABOUT_TXT = """<b>➲ ᴍʏ ɴᴀᴍᴇ : <a href="http://t.me/Kalakar_Sangram">{}</a>\n➲ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Kalakar_Sangram'>sᴀɴɢʀᴀᴍ</a>\n➲ ʟɪʙʀᴀʀʏ : <a href="https://docs.pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>\n➲ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/download/releases/3.0/">ᴘʏᴛʜᴏɴ</a>\n➲ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>\n➲ ʜᴏsᴛᴇᴅ ᴏɴ  : <a href="http://AvengerNews">ᴘʀɪᴠᴀᴛᴇ sᴇʀᴠᴇʀ</a>\n➲ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : <a href="http://t.me/Red_Wine_Op">ᴠ4.2 [sᴛᴀʙʟᴇ]</a></b>"""
+    ABOUT_TXT = """<b>➲ ᴍʏ ɴᴀᴍᴇ : <a href="http://t.me/Kalakar_Sangram">{}</a>\n➲ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Kalakar_Sangram'>sᴀɴɢʀᴀᴍ</a>\n➲ ʟɪʙʀᴀʀʏ : <a href="https://docs.pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>\n➲ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/download/releases/3.0/">ᴘʏᴛʜᴏɴ</a>\n➲ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>\n➲ ʜᴏsᴛᴇᴅ ᴏɴ  : <a href="https://t.me/ProSangram">ᴘʀɪᴠᴀᴛᴇ sᴇʀᴠᴇʀ</a>\n➲ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : <a href="http://t.me/Red_Wine_Op">ᴠ4.2 [sᴛᴀʙʟᴇ]</a></b>"""
     
     CHANNELS = """
 <b>⚡ ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ⚡ 
