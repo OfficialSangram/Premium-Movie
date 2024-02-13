@@ -1531,7 +1531,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('• ɢʀᴏᴜᴘs •', callback_data="groups"),
                     InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
                 ],[
                     InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
@@ -1780,6 +1780,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
             InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/Red_Wine_Op')
+        ],[
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
+        ],[
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Red_Wine_Op')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CHANNELS.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "channels":
+        buttons = [[
+            InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/AvengerNews')
+        ],[
+            InlineKeyboardButton(' ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ² ', url='https://t.me/Red_Wine_Op')
         ],[
             InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
         ],[
