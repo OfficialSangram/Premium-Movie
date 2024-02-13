@@ -236,7 +236,9 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
        💳ᴄʀᴇᴅɪᴛ💳
 
 <u>ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ</u>
+ʜᴇʀᴇ ɪs ᴛʜᴇ <a href="http://t.me/ProSangram">ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴀɴᴅ sᴘᴏɴsᴏʀ</a> ᴏғ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ</a>.
 
+ʜᴇ sᴘᴇɴᴛ ᴀ ʟᴏᴛ ᴏғ ᴛɪᴍᴇ ғᴏʀ ᴍᴀᴋɪɴɢ <a href="http://t.me/AvengerAutoFilterBot">ᴀᴠᴇɴɢᴇʀ ᴀᴜᴛᴏ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ</a> ᴀ sᴜᴘᴇʀ ᴍᴏᴠɪᴇs ʙᴏᴛ.</b>
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     
