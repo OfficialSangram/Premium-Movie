@@ -159,7 +159,7 @@ Bʏ @AvengerAutoFilterBot"""
 
 - Avenger Auto-Filter Supports both url and alert inline buttons.
 
-NOTE:
+<b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. Avenger Auto-Filter supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
