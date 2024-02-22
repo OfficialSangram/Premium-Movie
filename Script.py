@@ -155,6 +155,22 @@ Bʏ @AvengerAutoFilterBot"""
 • /get_premium - <code>ɢᴇᴛ ɪɴꜰᴏ ᴏꜰ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ.</code>
 • /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>"""
 
+    BUTTON_TEXT = """
+   <b>Filters Buttons</b>
+
+- Avenger Auto-Filter Supports both url and alert inline buttons.
+
+NOTE:
+1. Telegram will not allows you to send buttons without any content, so content is mandatory.
+2. Avenger Auto-Filter supports buttons with any telegram media type.
+3. Buttons should be properly parsed as markdown format
+
+<b>URL buttons:</b>
+<code>[Button Text](buttonurl:https://t.me/Red_Wine_Op)</code>
+
+<b>Alert buttons:</b>
+<code>[Button Text](buttonalert:This is an alert message)</code>"""
+
     SHORTLINK_INFO = """<b>
  ❗<u>ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴜꜱɪɴɢ ʙᴏᴛ</u>❗
 
