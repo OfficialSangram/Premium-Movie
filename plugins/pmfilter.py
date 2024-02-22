@@ -1,5 +1,3 @@
-# Kanged From @TroJanZheX
-# Thanks @DeletedFromEarth
 import asyncio
 import re
 import ast
@@ -1854,6 +1852,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
             InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
+        ], [
+            InlineKeyboardButton('• ғɪʟᴛᴇʀs ʙᴜᴛᴛᴏɴ •', callback_data='button')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
