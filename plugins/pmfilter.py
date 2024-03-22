@@ -1795,8 +1795,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/AvengerNews')
         ],[
-            InlineKeyboardButton(' ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ² ', url='https://t.me/Red_Wine_Op')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/Red_Wine_Op')
         ],[
             InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
         ],[
