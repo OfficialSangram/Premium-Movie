@@ -1530,7 +1530,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('• ɢʀᴏᴜᴘs •', callback_data="groups"),
-                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
+                    InlineKeyboardButton('• ᴄʜᴀɴɴᴇʟs •', callback_data='channels')
                 ],[
                     InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
                     InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
@@ -1774,12 +1774,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('ɴᴇᴛᴡᴏʀᴋ', url='https://t.me/AvengerNetwork')
+            InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url='https://t.me/MoviesBullBackup')
         ],[
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/AvengerNews'),
             InlineKeyboardButton('ʙᴏᴛs', url='https://t.me/AvengerBots')
         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url='https://t.me/MoviesBullBackup')
+            InlineKeyboardButton('ɴᴇᴛᴡᴏʀᴋ', url='https://t.me/AvengerNetwork')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start')
         ]]
