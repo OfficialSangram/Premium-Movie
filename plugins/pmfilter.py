@@ -1793,15 +1793,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "groups":
         buttons = [[
-            InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/AvengerNews')
+            InlineKeyboardButton('ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛs ɢʀᴏᴜᴘ', url='https://t.me/Movies_Bull')
         ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ¹', url='https://t.me/Movies_Bull'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/Red_Wine_Op')
+            InlineKeyboardButton('ʜᴇʟᴘ', url='https://t.me/AvengerHelp'),
+            InlineKeyboardButton('ʙᴏᴛ ᴛᴀʟᴋ', url='https://t.me/AvengerBotTalk')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Movies_Bull')
+            InlineKeyboardButton('ᴄʜɪᴛ ᴄʜᴀᴛ', url='https://t.me/Red_Wine_Op')
         ],[
-            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Red_Wine_Op')
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
