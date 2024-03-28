@@ -271,7 +271,10 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 
 📖 {plot}
 
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>
+💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}
+
+💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Kalakar_Sangram'>{message.chat.title}</a></b>
+    
 """
     
 
