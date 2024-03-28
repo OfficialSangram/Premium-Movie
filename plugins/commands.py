@@ -23,7 +23,7 @@ TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 
-@Client.on_message(filters.command("help"))
+@Client.on_message(filters.command("help") & filters.incoming)
 async def help(client, message):
     
         helpbuttons = [[
@@ -37,7 +37,7 @@ async def help(client, message):
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(helpbuttons)
-        await query.message.edit_text(
+        await message.reply_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
