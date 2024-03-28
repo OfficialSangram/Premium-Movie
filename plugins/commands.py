@@ -25,6 +25,24 @@ BATCH_FILES = {}
 
 @Client.on_message(filters.command("help"))
 async def help(client, message):
+    
+        helpbuttons = [[
+            InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
+        ], [
+            InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
+            InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
+        ], [
+            InlineKeyboardButton('• ғɪʟᴛᴇʀs ʙᴜᴛᴛᴏɴ •', callback_data='button')
+        ], [
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(helpbuttons)
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
