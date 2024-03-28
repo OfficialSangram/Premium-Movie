@@ -260,11 +260,11 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     IMDB_TEMPLATE_TXT = """
 <b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
 
-🧿 {title}</b>
+🧿 ᴛɪᴛʟᴇ : {title}</b>
 
 <b>⭐ {rating} | ⏰ {runtime} Minutes
-📆 {release_date}
-🕵️ ᴅɪʀᴇᴄᴛᴏʀ - {director}
+📆 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : {release_date}
+🕵️ ᴅɪʀᴇᴄᴛᴏʀ : {director}
 
 ●  {languages}
 ●  {genres}
