@@ -23,25 +23,25 @@ TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 
-@Client.on_message(filters.command("help") & filters.incoming)
-async def help(client, message):
+#@Client.on_message(filters.command("help") & filters.incoming)
+#async def help(client, message):
     
-        helpbuttons = [[
-            InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
-        ], [
-            InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
-            InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
-        ], [
-            InlineKeyboardButton('• ғɪʟᴛᴇʀs ʙᴜᴛᴛᴏɴ •', callback_data='button')
-        ], [
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(helpbuttons)
-        await message.reply_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+#        helpbuttons = [[
+#            InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
+#        ], [
+#            InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
+#            InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
+#        ], [
+#            InlineKeyboardButton('• ғɪʟᴛᴇʀs ʙᴜᴛᴛᴏɴ •', callback_data='button')
+#        ], [
+#            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+#        ]]
+#        reply_markup = InlineKeyboardMarkup(helpbuttons)
+#        await message.reply_text(
+#            text=script.HELP_TXT.format(query.from_user.mention),
+#            reply_markup=reply_markup,
+#            parse_mode=enums.ParseMode.HTML
+#        )
     
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
