@@ -264,14 +264,13 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 
 <b>⭐ {rating} | ⏰ {runtime} Minutes
 📆 {release_date}
-🕵️ {director}
+🕵️ ᴅɪʀᴇᴄᴛᴏʀ - {director}
 
 ●  {languages}
 ●  {genres}
 
 📖 {plot}
 
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}
 
 💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Kalakar_Sangram'>{message.chat.title}</a></b>
     
@@ -456,5 +455,5 @@ BOT WORKING PROPERLY"""
     DEVELOPER_TXT = """
 special Thanks To ❤️ Developer -
 
--Dev [Owner of this bot ]<a href='https://t.me/ProSangram'>HP</a>
+-Dev [Owner of this bot ]<a href='https://t.me/ProSangram'>Sangram</a>
 """
