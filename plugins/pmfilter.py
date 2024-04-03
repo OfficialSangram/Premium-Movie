@@ -1553,10 +1553,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+        await query.edit_message_media(
+            InputMediaPhoto(
+                photo="https://graph.org//file/81ba0f437d1f930684077.jpg",
+                caption=script.START_TXT.format(query.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
         )
         await query.answer(MSG_ALRT)
 
@@ -1870,7 +1873,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "gib_source":
         buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='about')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
@@ -1912,12 +1915,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.edit_message_media(
-            InputMediaPhoto(
-                photo="https://graph.org//file/81ba0f437d1f930684077.jpg",
-                caption=script.ABOUT_TXT.format(temp.B_NAME),
-                reply_markup=reply_markup
-            )
+        await query.message.edit_text(
+            text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
         
     elif query.data == "rendr":
