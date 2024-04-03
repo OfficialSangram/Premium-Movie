@@ -1875,8 +1875,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
             InputMediaVideo("https://telegra.ph/file/6c30c3352d6d6a09f735e.mp4"),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+            reply_markup=reply_markup
         )
     
     elif query.data == "help":
@@ -1908,7 +1907,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(6485380150)),
             InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
         ], [
-            InlineKeyboardButton('Repo',callback_data='gib_source')
+            InlineKeyboardButton('Repo', callback_data='gib_source')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
