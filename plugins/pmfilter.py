@@ -1856,8 +1856,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    
 
+    elif query.data == "rules":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.RULES_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
@@ -1865,7 +1875,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
             InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
         ], [
-            InlineKeyboardButton('• ғɪʟᴛᴇʀs ʙᴜᴛᴛᴏɴ •', callback_data='button')
+            InlineKeyboardButton('• ʙᴜᴛᴛᴏɴs •', callback_data='button'),
+            InlineKeyboardButton('• ʀᴜʟᴇs •', callback_data='rules')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
