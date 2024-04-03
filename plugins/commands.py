@@ -75,6 +75,8 @@ async def start(client, message):
                     InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info")
                 ],[
                     InlineKeyboardButton('🎁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ 🎁', callback_data="premium_info")
+                ],[
+                    InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -136,6 +138,8 @@ async def start(client, message):
                     InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info")
                 ],[
                     InlineKeyboardButton('🎁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ 🎁', callback_data="premium_info")
+                ],[
+                    InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -216,7 +220,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/AvengerNetwork') 
+                                InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl') 
                             ]
                         ]
                     )
@@ -235,7 +239,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/AvengerNetwork') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -419,7 +423,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/AvengerNetwork') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -496,7 +500,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/AvengerNetwork') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -556,7 +560,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/AvengerNetwork') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
