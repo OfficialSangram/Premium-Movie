@@ -1907,7 +1907,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(6485380150)),
             InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
         ], [
-            InlineKeyboardButton('Repo', callback_data='gib_source')
+            InlineKeyboardButton('• ʀᴇᴘᴏ / sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ •', callback_data='gib_source')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
