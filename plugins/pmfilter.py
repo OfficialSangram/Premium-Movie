@@ -1538,6 +1538,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info")
                 ],[
                     InlineKeyboardButton('🎁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ: ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ 🎁', callback_data="premium_info")
+                ],[
+                    InlineKeyboardButton('Get Latest Movies', url='https://t.me/+qIHh5aV3IVs0OTRl')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
