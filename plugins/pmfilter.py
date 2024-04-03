@@ -168,7 +168,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -186,7 +186,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     try:
@@ -405,7 +405,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -423,7 +423,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -568,7 +568,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -586,7 +586,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -767,7 +767,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📤 ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ 📤", callback_data=f"sendfiles#{key}")
         ])
     
     offset = 0
@@ -1539,7 +1539,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('🎁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ: ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ 🎁', callback_data="premium_info")
                 ],[
-                    InlineKeyboardButton('Get Latest Movies', url='https://t.me/+qIHh5aV3IVs0OTRl')
+                    InlineKeyboardButton('Get Latest Movies', url=f'https://t.me/+qIHh5aV3IVs0OTRl')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
